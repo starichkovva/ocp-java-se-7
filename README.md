@@ -1,6 +1,15 @@
 # Code examples for Oracle Certified Professional Java SE 7
 This repository contains examples I used to prepare for certification exam.
 
-Most of examples are JUnit tests, so use following Maven goal to run them:
+Most of examples are simple Java classes.
+You can run them passing proper code as a program argument:
 
-<pre><code>mvn test</pre></code>
+<pre><code>java -jar ocp-java-se-7-&lt;version&gt;.jar [valid_code]</code></pre>
+
+Valid arguments can be found in:
+
+<pre><code>org.starichkov.java.ocp.Examples</code></pre>
+
+Some of examples are JUnit tests, so use following Maven goal to run them:
+
+<pre><code>mvn test</code></pre>
