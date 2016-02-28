@@ -2,6 +2,8 @@ package org.starichkov.java.ocp;
 
 import org.starichkov.java.ocp.formatting.DateFormatExample;
 import org.starichkov.java.ocp.formatting.DateParseExample;
+import org.starichkov.java.ocp.formatting.NumberFormatExample;
+import org.starichkov.java.ocp.formatting.NumberParseExample;
 
 /**
  * @author Vadim Starichkov
@@ -18,6 +20,12 @@ public final class Main {
                     break;
                 case DATE_PARSE:
                     runnableExample = new DateParseExample();
+                    break;
+                case NUMBER_FORMAT:
+                    runnableExample = new NumberFormatExample();
+                    break;
+                case NUMBER_PARSE:
+                    runnableExample = new NumberParseExample();
                     break;
                 case INVALID_EXAMPLE:
                 default:

@@ -23,7 +23,7 @@ public class DateParseExample implements RunnableExample {
 
         try {
             Date parsedDate = dateFormat.parse(formattedString);
-            LOGGER.info("Parsed: {}", parsedDate);
+            LOGGER.info("Parsed date: {}", parsedDate);
         } catch (ParseException e) {
             LOGGER.error("Parsing error!", e);
         }

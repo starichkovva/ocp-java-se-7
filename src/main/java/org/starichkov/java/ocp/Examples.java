@@ -5,7 +5,12 @@ package org.starichkov.java.ocp;
  * @since 28.02.2016 19:30
  */
 public enum Examples {
-    INVALID_EXAMPLE(0), DATE_FORMAT(81), DATE_PARSE(82);
+    INVALID_EXAMPLE(0),
+    DATE_FORMAT(81),
+    DATE_PARSE(82),
+    NUMBER_FORMAT(83),
+    NUMBER_PARSE(84),
+    ;
 
     private final int code;
 
