@@ -6,7 +6,7 @@ You can run them passing proper code as a program argument:
 
 <pre><code>java -jar ocp-java-se-7-&lt;version&gt;.jar [valid_code]</code></pre>
 
-Valid arguments can be found in:
+Valid example codes can be found in:
 
 <pre><code>org.starichkov.java.ocp.Examples</code></pre>
 
