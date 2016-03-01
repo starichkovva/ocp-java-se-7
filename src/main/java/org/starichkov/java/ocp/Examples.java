@@ -10,6 +10,9 @@ public enum Examples {
     DATE_PARSE(82),
     NUMBER_FORMAT(83),
     NUMBER_PARSE(84),
+    DATE(85),
+    CALENDAR(86),
+    LOCALES(87),
     ;
 
     private final int code;
