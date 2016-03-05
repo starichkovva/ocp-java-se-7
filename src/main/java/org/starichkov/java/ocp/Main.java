@@ -7,6 +7,9 @@ import org.starichkov.java.ocp.formatting.DateParseExample;
 import org.starichkov.java.ocp.formatting.NumberFormatExample;
 import org.starichkov.java.ocp.formatting.NumberParseExample;
 import org.starichkov.java.ocp.formatting.LocalesExample;
+import org.starichkov.java.ocp.tokenizing.ScannerTokenizeExample;
+import org.starichkov.java.ocp.tokenizing.StringSplitTokenizeExample;
+import org.starichkov.java.ocp.tokenizing.StringTokenizerExample;
 
 /**
  * @author Vadim Starichkov
@@ -38,6 +41,15 @@ public final class Main {
                     break;
                 case LOCALES:
                     runnableExample = new LocalesExample();
+                    break;
+                case TOKENIZE_SCANNER:
+                    runnableExample = new ScannerTokenizeExample();
+                    break;
+                case TOKENIZE_STRING_SPLIT:
+                    runnableExample = new StringSplitTokenizeExample();
+                    break;
+                case TOKENIZE_STRING_TOKENIZER:
+                    runnableExample = new StringTokenizerExample();
                     break;
                 case INVALID_EXAMPLE:
                 default:

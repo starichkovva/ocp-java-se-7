@@ -13,6 +13,9 @@ public enum Examples {
     DATE(85),
     CALENDAR(86),
     LOCALES(87),
+    TOKENIZE_SCANNER(881),
+    TOKENIZE_STRING_SPLIT(882),
+    TOKENIZE_STRING_TOKENIZER(883),
     ;
 
     private final int code;
