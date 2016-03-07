@@ -7,6 +7,11 @@ import org.starichkov.java.ocp.formatting.DateParseExample;
 import org.starichkov.java.ocp.formatting.NumberFormatExample;
 import org.starichkov.java.ocp.formatting.NumberParseExample;
 import org.starichkov.java.ocp.formatting.LocalesExample;
+import org.starichkov.java.ocp.regex.MetaCharacterExample;
+import org.starichkov.java.ocp.regex.QuantifiersExample;
+import org.starichkov.java.ocp.regex.RangesExample;
+import org.starichkov.java.ocp.regex.ScannerRegExExample;
+import org.starichkov.java.ocp.regex.SimpleSearchExample;
 import org.starichkov.java.ocp.tokenizing.ScannerTokenizeExample;
 import org.starichkov.java.ocp.tokenizing.StringSplitTokenizeExample;
 import org.starichkov.java.ocp.tokenizing.StringTokenizerExample;
@@ -50,6 +55,21 @@ public final class Main {
                     break;
                 case TOKENIZE_STRING_TOKENIZER:
                     runnableExample = new StringTokenizerExample();
+                    break;
+                case REGEX_SIMPLE_SEARCH:
+                    runnableExample = new SimpleSearchExample();
+                    break;
+                case REGEX_META_CHARACTER:
+                    runnableExample = new MetaCharacterExample();
+                    break;
+                case REGEX_RANGES:
+                    runnableExample = new RangesExample();
+                    break;
+                case REGEX_QUANTIFIERS:
+                    runnableExample = new QuantifiersExample();
+                    break;
+                case REGEX_SCANNER:
+                    runnableExample = new ScannerRegExExample();
                     break;
                 case INVALID_EXAMPLE:
                 default:

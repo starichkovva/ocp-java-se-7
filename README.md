@@ -10,6 +10,6 @@ Valid example codes can be found in:
 
 <pre><code>org.starichkov.java.ocp.Examples</code></pre>
 
-Some of examples are JUnit tests, so use following Maven goal to run them:
+Some of examples are (or have) JUnit tests, so use following Maven goal to run them:
 
 <pre><code>mvn test</code></pre>
