@@ -7,6 +7,7 @@ import org.starichkov.java.ocp.formatting.DateParseExample;
 import org.starichkov.java.ocp.formatting.NumberFormatExample;
 import org.starichkov.java.ocp.formatting.NumberParseExample;
 import org.starichkov.java.ocp.formatting.LocalesExample;
+import org.starichkov.java.ocp.formatting.PrintStreamFormatExample;
 import org.starichkov.java.ocp.regex.MetaCharacterExample;
 import org.starichkov.java.ocp.regex.QuantifiersExample;
 import org.starichkov.java.ocp.regex.RangesExample;
@@ -25,6 +26,7 @@ public enum Examples {
     DATE_PARSE(812, new DateParseExample()),
     NUMBER_FORMAT(821, new NumberFormatExample()),
     NUMBER_PARSE(822, new NumberParseExample()),
+    PRINT_STREAM_FORMAT(83, new PrintStreamFormatExample()),
     DATE(85, new DateExample()),
     CALENDAR(86, new CalendarExample()),
     LOCALES(87, new LocalesExample()),
@@ -36,7 +38,12 @@ public enum Examples {
     REGEX_RANGES(893, new RangesExample()),
     REGEX_QUANTIFIERS(894, new QuantifiersExample()),
     REGEX_SCANNER(895, new ScannerRegExExample()),
-    ;
+    UNKNOWN(0, new RunnableExample() {
+        @Override
+        public void run() {
+            System.out.println("Unknown example requested.");
+        }
+    });
 
     private final int code;
     private final RunnableExample example;
@@ -60,11 +67,6 @@ public enum Examples {
                 return example.getExample();
             }
         }
-        return new RunnableExample() {
-            @Override
-            public void run() {
-                System.out.println("Unknown example requested.");
-            }
-        };
+        return UNKNOWN.getExample();
     }
 }
