@@ -1,5 +1,6 @@
 package org.starichkov.java.ocp;
 
+import org.starichkov.java.ocp.assertions.AssertionsExample;
 import org.starichkov.java.ocp.formatting.CalendarExample;
 import org.starichkov.java.ocp.formatting.DateExample;
 import org.starichkov.java.ocp.formatting.DateFormatExample;
@@ -22,6 +23,7 @@ import org.starichkov.java.ocp.tokenizing.StringTokenizerExample;
  * @since 28.02.2016 19:30
  */
 public enum Examples {
+    ASSERTIONS(701, new AssertionsExample()),
     DATE_FORMAT(811, new DateFormatExample()),
     DATE_PARSE(812, new DateParseExample()),
     NUMBER_FORMAT(821, new NumberFormatExample()),
