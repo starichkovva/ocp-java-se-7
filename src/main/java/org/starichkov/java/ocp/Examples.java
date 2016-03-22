@@ -3,6 +3,8 @@ package org.starichkov.java.ocp;
 import org.starichkov.java.ocp.assertions.AssertionsExample;
 import org.starichkov.java.ocp.exceptions.MultiCatchExample;
 import org.starichkov.java.ocp.exceptions.RethrowExample;
+import org.starichkov.java.ocp.exceptions.SuppressedExceptionsExample;
+import org.starichkov.java.ocp.exceptions.TryWithResourcesExample;
 import org.starichkov.java.ocp.formatting.CalendarExample;
 import org.starichkov.java.ocp.formatting.DateExample;
 import org.starichkov.java.ocp.formatting.DateFormatExample;
@@ -28,6 +30,8 @@ public enum Examples {
     ASSERTIONS(701, new AssertionsExample()),
     EXCEPTION_RETHROW(711, new RethrowExample()),
     MULTI_CATCH(712, new MultiCatchExample()),
+    TRY_WITH_RESOURCES(713, new TryWithResourcesExample()),
+    SUPPRESSED_EXCEPTIONS(714, new SuppressedExceptionsExample()),
     DATE_FORMAT(811, new DateFormatExample()),
     DATE_PARSE(812, new DateParseExample()),
     NUMBER_FORMAT(821, new NumberFormatExample()),
