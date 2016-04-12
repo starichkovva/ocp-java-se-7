@@ -13,3 +13,5 @@ Valid example codes can be found in:
 Some of examples are (or have) JUnit tests, so use following Maven goal to run them:
 
 <pre><code>mvn test</code></pre>
+
+And some of examples are non-runnable Java files - just for 'look and study' purposes.
